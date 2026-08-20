@@ -1,6 +1,6 @@
 public class HelloWorld {
-    public static void main() {
-        
+    public static void main(String[] args) {
+        fizzBuzz(20);
     }
     public static String princessBride() {
         return "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.";
@@ -13,19 +13,22 @@ public class HelloWorld {
         }
     }
     public static void fizzBuzz(int num) {
-        for(int i = 0; i < num; i++) {
+        for(int i = 0; i <= num; i++) {
             String str = "";
-            if (num % 3 == 0) {
+            if (i % 3 == 0) {
                 str = str + "Fizz";
             }
-            if (num % 5 == 0) {
+            if (i % 5 == 0) {
                 str = str + "Buzz";
             }
             if (str.equals("")) {
-                System.out.println(String.valueOf(num));
+                System.out.println(String.valueOf(i));
             } else {
                 System.out.println(str);
             }
         }
+    }
+    public static int iLoveYou() {
+        return 3000;
     }
 }
