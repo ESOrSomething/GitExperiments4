@@ -13,7 +13,7 @@ public class HelloWorld {
         }
     }
     public static void fizzBuzz(int num) {
-        for(int i = 0; i <= num; i++) {
+        for(int i = 1; i <= num; i++) {
             String str = "";
             if (i % 3 == 0) {
                 str = str + "Fizz";
